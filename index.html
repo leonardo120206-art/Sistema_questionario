@@ -24,7 +24,7 @@ h2{
 <script>
 function questionario(){
     alert('Vamos conhecer a base do Javascript!');
-    var decisao = corm('Está pronto para aprender?');
+    var decisao = confirm('Está pronto para aprender?');
     const pais = 'Brasil';
     var teste = null;
     let teste2
@@ -39,9 +39,9 @@ function questionario(){
         let salario = prompt('Digite seu salário:');
         let nota = Number(prompt('Digite a maior nota que tirou no curso até agora'));
 
-        document.writeIn('<h2> Seja bem-vindo ' + nome + '!</h2>');
+        document.write('<h2> Seja bem-vindo ' + nome + '!</h2>');
         
-        document.write('ul')
+        document.write('<ul>')
             document.writeIn('<li> Idade: ' + idade + ' anos!</li>');
             document.writeIn(`<li> Curso escolhido: ${curso.toLowercase()}</li>`);
             document.writeIn('<li>Você tem '+ nome.length + ' caracteres no seu nome!</li>');
@@ -56,6 +56,11 @@ function questionario(){
     console.log(typeof teste);
     console.log(typeof teste2);
         
+    }else{
+        alert('Que pena querido aluno, quem sabe na próxima!');
+        document.writeln('<h1> Sistema encerrado.. recarregue a página para tentar novamente!</h1>');
+        alert(decisao);
+        alert(nome);
     }
 }
 
@@ -64,6 +69,6 @@ function questionario(){
 </head>
 <body>
     <h1>Sistema de Questionário</h1>
-    <button onclick="window.location.href='cadastro.html'">Cadastrar Pergunta</button>
+    <button onclick="questionario()">Iniciar Sistema</button>
 </body>
 </html>
