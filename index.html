@@ -42,11 +42,11 @@ function questionario(){
         document.write('<h2> Seja bem-vindo ' + nome + '!</h2>');
         
         document.write('<ul>')
-            document.writeIn('<li> Idade: ' + idade + ' anos!</li>');
-            document.writeIn(`<li> Curso escolhido: ${curso.toLowercase()}</li>`);
-            document.writeIn('<li>Você tem '+ nome.length + ' caracteres no seu nome!</li>');
-            document.writeIn('<li> Seu pais é ' + pais + '</li>');
-            document.writeIn(`<li>Seu salário é de: '+Number.parseFloat(salario).toFixed(2)+'</li>`);
+            document.writeln('<li> Idade: ' + idade + ' anos!</li>');
+            document.writeln(`<li> Curso escolhido: ${curso.toLowercase()}</li>`);
+            document.writeln('<li>Você tem '+ nome.length + ' caracteres no seu nome!</li>');
+            document.writeln('<li> Seu pais é ' + pais + '</li>');
+            document.writeln(`<li>Seu salário é de: '+Number.parseFloat(salario).toFixed(2)+'</li>`);
             document.write('</ul>');
 
     console.log(typeof nome);
